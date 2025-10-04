@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Pribadi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header, footer {
+      background: #007acc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    section {
+      margin: 20px 0;
+      padding: 15px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+    }
+    form label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+    }
+    form input[type="submit"] {
+      background: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    form input[type="submit"]:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Profil Pribadi</h1>
+    <p>Belajar HTML5</p>
+  </header>
+
+  <section>
+    <h2>Foto Profil</h2>
+    <img src="profil.jpg" alt="Foto Profil">
+  </section>
+
+  <section>
+    <h2>Biodata</h2>
+    <table>
+      <tr><th>Nama</th><td>Nama Lengkap Anda</td></tr>
+      <tr><th>Umur</th><td>20</td></tr>
+      <tr><th>Alamat</th><td>Kota, Indonesia</td></tr>
+      <tr><th>Email</th><td><a href="mailto:email@example.com">email@example.com</a></td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Deskripsi Diri</h2>
+    <p>Saya adalah mahasiswa Teknik Informatika yang tertarik pada pemrograman web, desain UI/UX, dan pengembangan aplikasi mobile.</p>
+  </section>
+
+  <section>
+    <h2>Hobi & Keterampilan</h2>
+    <ul>
+      <li>Ngoding (HTML, CSS, JavaScript)</li>
+      <li>Desain UI/UX di Figma</li>
+      <li>Editing Video</li>
+      <li>Bermain Musik</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Multimedia</h2>
+    <p>Musik Favorit:</p>
+    <audio controls>
+      <source src="musik.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Formulir Pesan</h2>
+    <form action="proses.php" method="post">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Profil HTML5 | Dibuat untuk latihan</p>
+  </footer>
+
+</body>
+</html>
